@@ -1,0 +1,24 @@
+/opt/google/chrome/google-chrome  --app=https://wx.qq.com/
+/usr/bin/pyrenamer
+meld %F
+FBReader %F
+
+inkscape %F
+mate-screenshot --interactive
+totem %U
+rhythmbox %U
+
+grdesktop
+mate-disk-usage-analyzer
+palimpsest
+mate-system-monitor
+
+mate-keybinding-properties
+software-properties-gtk
+mozo 主菜单
+
+gparted-pkexec
+
+
+
+

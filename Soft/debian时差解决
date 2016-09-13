@@ -1,0 +1,23 @@
+
+禁用UTC时间:vi /etc/default/rcS
+加入 UTC=no
+
+配置时区：
+sudo dpkg-reconfigure tzdata
+或手动替换：
+sudo rsync /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+同步网络时间：
+sudo aptitude install ntpdate
+ntpdate 2.cn.pool.ntp.org
+或：ntpdate 3.cn.pool.ntp.org
+
+查看BIOS硬件时间
+sudo hwclock --show 
+
+将系统时间写入硬件
+sudo hwclock --systohc 
+
+#将硬件时间写入系统时间
+#sudo hwclock --hctosys 
+
